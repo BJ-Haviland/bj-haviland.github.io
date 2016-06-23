@@ -2,20 +2,146 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>MAP672 Portfolio: Bryan J. Haviland</title>
+<title>Portfolio: Bryan J. Haviland</title>
 
 <meta name=‘viewport’ content=‘initial-scale=1,maximum-scale=1,user-scalable=no’ />
+    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    
+<link href='http://fonts.googleapis.com/css?family=Imprima' rel='stylesheet' type='text/css'>
 
+    
 <style>
     
-/* CSS style rules go here! */   
-
+    body {  
+        background: #0F0000;   
+        font-family: Imprima, sans-serif;
+        color: #DEE0B1;
+    }
+     header { 
+        width: 100%;
+        min-width: 800px;
+        margin: 0 auto;
+        background: #7E7952;
+        padding: 45px 0 20px;
+    }
+    h1 { 
+        font-family: Dosis, sans-serif;
+        color: #7E7952; 
+        width: 80%;
+        margin: 0 auto;
+        color: #DEE0B1;
+    }
+    h2 { 
+        font-family: Dosis, sans-serif;
+        color: #7E7952;
+        width: 80%;
+        margin: 0 auto;
+        color: #DEE0B1;
+    }
+    h3 {
+        font-family: Dosis, sans-serif;
+        color: #DEE0B1;
+    }
+    p { 
+        font-size: .9em; 
+        color: #7A6E56; 
+    }
+    ul {
+        list-style-type: none; 
+        font-size: .9em; 
+        color: #683C3C; 
+        line-height: 1.6em;
+    }
+    a, a:visited {   
+        color: #DEE0B1;
+    }
+    .project {
+        width: 80%;
+        min-width: 800px;
+        height: 100%;
+        margin: 35px auto;
+    }
+    .project:after{
+        content: "";
+        display: table;
+        clear: both; 
+    }
+    .project-image-l {
+        width: 388px;
+        height: 240px;
+        background: white;
+        float: left;
+        margin-right: 20px;
+        border: 2px solid #DEE0B1;
+    }
+    .project-image-r {
+        width: 388px;
+        height: 240px;
+        background: white;
+        float: right;
+        margin-right: 20px;
+        border: 2px solid #DEE0B1;
+    }
+    
 </style>
 </head>
 
 <body>
+    
+<header>
+    <h1>Bryan J. Haviland:</h1>
+    <h2>Cartographic Arts Practitioner</h2>
+</header>
+    
+    <section class="project">
+        <a target = '_blank' href="https://github.com/BJ-Haviland/map672/blob/master/module-09/lab-09/lab-09-data/index.html"><img src="images/map672_lab09_2.JPG" alt="Proportional Symbol Map" class="project-image-l"/></a>
+        <h3><a target = '_blank' href="https://github.com/BJ-Haviland/map672/blob/master/module-09/lab-09/lab-09-data/index.html">Proportional Symbol Map</a></h3>
+        <p>This map was a learning process. Composed of JavaScript, along with the Leaflet JavaScript Library.</p>
+        <ul>
+            <li>See the map: <a target = '_blank'  href="https://github.com/BJ-Haviland/map672/blob/master/module-09/lab-09/lab-09-data/index.html">Proportional Symbol Map</a></li>
+            <li>Data Source: <a target = '_blank'  href="https://www.eia.gov/electricity/data/detail-data.html">U.S. Energy Information Administration</a></li>
+        </ul>
+    </section>
+    
+    <section class="project">
+        <a target = '_blank' href="https://bj-haviland.cartodb.com/viz/2a658e46-f483-11e5-a867-0e787de82d45/public_map"><img src="images/uas_growth_2.JPG" alt="Commercial UAS Growth" class="project-image-l" /></a>
+        <h3><a target = '_blank' href="https://bj-haviland.cartodb.com/viz/2a658e46-f483-11e5-a867-0e787de82d45/map">Commercial UAS Growth in the U.S. (Temporal Analysis)</a></h3>
+        <p>This project shows the propagation of commercial UAS operation in the U.S. It displays the growth of FAA certificates, via issue date. Once zoomed in, the user may click on points for details on operators, or airports. The data originated as separate tables, then joined in a relational database, geocoded with Google geocoding service, and presented through CartoDB.</p>
+        <ul>
+            <li>See the map: <a target = '_blank'  href="https://bj-haviland.cartodb.com/viz/2a658e46-f483-11e5-a867-0e787de82d45/map">Commercial UAS Growth in the U.S.</a></li>
+            <li>Data Source: <a target = '_blank'  href="http://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry/releasable_aircraft_download/">U.S. FAA Aircraft Registry</a></li>
+        </ul>
 
-    <p>I’m going to be a portfolio page.</p>
+    </section>
+    
+    <section class="project">
+        <img src="images/map671_lab04_sm2.jpg" alt="Analysis: Density & Heatmaping" class="project-image-l" />
+        <h3>Analysis: Density & Heatmaping.</h3>
+        <p>This analysis example supports site selection. Using QGIS, the facilities were 0verlayed with a hexbin layer, summed using point in polygon analysis, high density clusters could then easily be observed, and a heat map was produced for further emphasis.</p>
+        <p> </p>
+        <ul> 
+            <li>See the map: <a href="maps/map671_lab04.svg">Analysis: Density & Heatmaping</a></li>
+            <li>Data Source: <a href="http://www.poi-factory.com/">Breweries - POI Factory (Oct. 08, 2015)</a></li>
+            <li>Data Source: <a href="http://www.naturalearthdata.com">Natural Earth</a></li>
+            <li>Data Source: <a href="https://www.census.gov/geo/maps-data/data/tiger.html">U.S. Census Bureau, TIGER Line data (2015)</a></li>
+            
+        </ul>
+    </section>
+    
+    <section class="project">
+        <img src="images/map671_lab06-tn-2.jpg" alt="Comparison: HOD vs. OSM" class="project-image-l" />
+        <h3>Comparing two publicly available datasets of the Halifax area.</h3>
+        <p>This dot map is a highly abstract example of encoding ocean depths with deeper situation levels of a blue hue.</p>
+        <p>Produced with QGIS, Open Street Map data, and Halifax Open Data. The OSM data was brought into the project via Quick OSM. The data was then projected into a local, linear coordinate reference sysytem. Buffers, and point in polygon analysis was used to calculate the number of bus stops in each dataset.</p>
+        <ul> 
+            <li>See the map: <a href="maps/map671_lab06_full.jpg">Comparisn: HOD vs. OSM map</a></li>
+            <li>Data Source: <a href="https://www.openstreetmap.org">OpenStreetMap</a></li>
+            <li>Data Source: <a href="http://catalogue.hrm.opendata.arcgis.com/">Halifax Open Data</a></li>
+        </ul>
+    </section>
+    
+
     
 </body>
 </html>
